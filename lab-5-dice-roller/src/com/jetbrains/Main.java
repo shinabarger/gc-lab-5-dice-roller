@@ -3,7 +3,8 @@ package com.jetbrains;
 import java.util.Random;
 import java.util.Scanner;
 
-/**e
+/**
+ * e
  * GOALS:
  * ASK USER TO ENTER # OF SIDES FOR 2 DICE
  * PROMPT USER TO ROLL DICE (YES/NO)
@@ -46,14 +47,13 @@ public class Main {
     public static String continueAndAwards(int die1, int die2) {
         String userAnswer;
         Scanner scan;
-        if(die1 == die2 & die1 != 1) {
+        if (die1 == die2 & die1 != 1) {
             System.out.println("WOW! You got doubles! Go straight to free parking! Would you like to continue? Enter Y or N.");
             userAnswer = "Y";
 
-        } else if (die1 == 1 && die2 ==1) {
+        } else if (die1 == 1 && die2 == 1) {
             System.out.println("SNAKE EYES. Nice. Good work out there. Want to continue? Enter Y or N.");
-        }
-        else {
+        } else {
             System.out.println("Would you like to continue? Enter Y or N.");
         }
         scan = new Scanner(System.in);
